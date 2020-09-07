@@ -47,5 +47,6 @@ namespace AutoMapperExample.WebApi.Controllers
         {
             return _context.Employees.Where(e => e.Id == id).ProjectTo<EmployeeViewModel>(_mapper.ConfigurationProvider).FirstOrDefault();
             
+        }
     }
 }
